@@ -1,0 +1,905 @@
+
+  <!-- ========= Library Sections (with Back to Chart Links) ========= -->
+
+  <!-- Library 1a: Ask Clarifiers -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-1a">Library 1a: Ask Clarifiers</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Ask me up to three clarifying questions before providing any solution.”</li>
+      <li>“Identify the ambiguous terms in my request and ask for specifics on each.”</li>
+      <li>“Summarize what you believe I am asking, then ask two questions to refine that understanding.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“What details are missing that would help you answer accurately?”</li>
+      <li>“List any assumptions you’re making and ask for confirmation on them.”</li>
+      <li>“Before proceeding, ask me to clarify the context around [key topic].”</li>
+      <li>“Which parts of my request could be interpreted in more than one way? Please specify.”</li>
+      <li>“Do you need sample input data or an example to understand my request better?”</li>
+      <li>“Can you identify five points of uncertainty in my prompt and ask me to clarify each?”</li>
+      <li>“Ask for constraints or boundaries (e.g., format, length, scope) that I should provide.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“List any missing variable definitions or data structures you need to run this Python function.”</li>
+      <li>“What Excel column headers or sample rows are required to build the correct formula?”</li>
+      <li>“Show me which parts of my SQL query are ambiguous and ask for table schema or field names.”</li>
+      <li>“Identify any undefined functions or modules in this code snippet and ask me for details.”</li>
+      <li>“What unit tests or example outputs do you need to verify this algorithm?”</li>
+    </ul>
+  </section>
+
+  <!-- Library 1b: Restate Request -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-1b">Library 1b: Restate Request</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Restate my request in your own words, then list any assumptions you made.”</li>
+      <li>“Paraphrase what I just asked, and confirm if you have captured my intent correctly.”</li>
+      <li>“Rewrite my question as you understand it, highlighting any missing or implied details.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Explain back to me the steps you would take based on how you understood my prompt.”</li>
+      <li>“Summarize the goal I’m asking for and then point out any unclear elements.”</li>
+      <li>“Reframe my question in a simpler form, then ask if that matches my objective.”</li>
+      <li>“List the key tasks you believe you need to perform to solve my request.”</li>
+      <li>“Restate the desired outcome, then ask me if there are any edge cases to consider.”</li>
+      <li>“Repeat my query in your own words, then ask if you should interpret it as [possible interpretation].”</li>
+      <li>“Rewrite my prompt as a bullet-point checklist of requirements.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Restate the database schema and query logic you think I need, then verify field names with me.”</li>
+      <li>“Explain the function signature and parameters you believe are required for this Python module.”</li>
+      <li>“Rewrite the Excel formula request as an explicit step sequence: which cells, which operations.”</li>
+      <li>“Summarize the algorithm flow in pseudocode as you understand it, then confirm variable usage.”</li>
+      <li>“Describe back the required input/output formats for the JSON API call I requested.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 1c: Surface Assumptions -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-1c">Library 1c: Surface Assumptions</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“List every assumption you’re making about my request and rate your confidence in each.”</li>
+      <li>“Identify implicit conditions or prerequisites you presume to solve this problem.”</li>
+      <li>“State the assumed data types, formats, or context before providing an answer.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“What default values or behaviors are you applying that I did not specify?”</li>
+      <li>“Identify two alternative assumptions you could make and ask which I prefer.”</li>
+      <li>“List all the background knowledge you think is given (e.g., ‘I assume you know X’).”</li>
+      <li>“Call out any domain expertise (e.g., industry jargon) you are using without definition.”</li>
+      <li>“Explain which parts of my prompt rely on your general knowledge versus what I explicitly stated.”</li>
+      <li>“Ask me to confirm any environmental factors (software version, data source) you assume.”</li>
+      <li>“Enumerate the possible interpretations of key phrases in my request.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“List assumptions you’re making about the Python environment (libraries, versions, paths).”</li>
+      <li>“State which cells or columns in Excel you presume contain source data.”</li>
+      <li>“Identify assumed database indices, table relationships, or join keys for this SQL query.”</li>
+      <li>“Surface any default parameter values (e.g., ‘n=10’) you are using in the function.”</li>
+      <li>“Detail the assumed structure of JSON/XML input for the REST API call.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 2a: Alternative Approaches -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-2a">Library 2a: Alternative Approaches</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Suggest three entirely different strategies to solve this problem, ranked by complexity.”</li>
+      <li>“List alternative methods (e.g., use a loop vs. a built-in function) and their trade-offs.”</li>
+      <li>“Offer two simpler approaches that might answer a subset of my question more quickly.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Propose a conceptual alternative that reframes the problem (e.g., from optimization to heuristic).”</li>
+      <li>“Compare a manual approach to an automated approach for this task.”</li>
+      <li>“Outline a high-level strategy that avoids this recurring obstacle.”</li>
+      <li>“Identify a common workaround that experienced users apply when this fails.”</li>
+      <li>“Describe how someone with domain expertise in X might tackle this differently.”</li>
+      <li>“Offer both a quick fix and a best-practice solution, explaining pros and cons.”</li>
+      <li>“List any open-source libraries or tools that could accomplish this instead of custom code.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Show me three different Python libraries/functions I could use to parse this data.”</li>
+      <li>“Provide an alternative Excel formula using built-in functions versus a macro.”</li>
+      <li>“Compare a SQL window function approach to a procedural loop for this aggregation.”</li>
+      <li>“Outline two different sorting algorithms for this list, with code examples in Python.”</li>
+      <li>“Suggest a way to use a Jupyter Notebook vs. a standalone script for this workflow.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 2b: Contradict Yourself -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-2b">Library 2b: Contradict Yourself</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Give me a solution that directly contradicts your previous suggestion and explain why it might work.”</li>
+      <li>“Provide an answer that challenges your last assumption, showing an alternative rationale.”</li>
+      <li>“List two ways in which your prior response could be wrong, then propose fixes.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Identify the opposite strategy of your previous answer and discuss its merits.”</li>
+      <li>“Assume my data structure is completely different; propose a solution under that assumption.”</li>
+      <li>“Critique your last answer as if you were a skeptical expert, then provide a revised approach.”</li>
+      <li>“Present a scenario where your earlier code would fail, and show how to correct for it.”</li>
+      <li>“Offer a counterexample that disproves your previous logic and propose an adjustment.”</li>
+      <li>“Explain why your original recommendation might not scale, and present a scalable alternative.”</li>
+      <li>“Contrast two opposing methodologies (e.g., recursion vs. iteration) for this problem.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Show me a Python function that fails for input X, then fix it so it handles that edge case.”</li>
+      <li>“Write an Excel formula that purposely miscalculates, then demonstrate the correct formula.”</li>
+      <li>“Give me a SQL query that returns duplicate rows, then rewrite it to eliminate duplicates.”</li>
+      <li>“Provide a sorting routine in Python that’s O(n²), and then one that’s O(n log n), explaining the difference.”</li>
+      <li>“Show how a naive recursive algorithm fails on large inputs, then optimize it iteratively.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 2c: Decision Matrix -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-2c">Library 2c: Decision Matrix</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Create a decision matrix comparing key options: criteria, pros, cons, and recommended choice.”</li>
+      <li>“List the decision criteria and assign weights, then rank each approach accordingly.”</li>
+      <li>“Generate a table with columns for approach, complexity, reliability, and speed for each option.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Define at least five evaluation metrics, then score each solution on those metrics.”</li>
+      <li>“Present a pros/cons chart for manual vs. automated methods.”</li>
+      <li>“Outline a risk matrix for each alternative, highlighting potential failure points.”</li>
+      <li>“Create a simple SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis.”</li>
+      <li>“Ask me which criteria are most important, then adjust the matrix accordingly.”</li>
+      <li>“Show a matrix ranking short-term vs. long-term trade-offs for each method.”</li>
+      <li>“Generate a comparative table in Markdown format for easy copying to documentation.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Build a Pandas DataFrame in Python that compares library A vs. library B on performance.”</li>
+      <li>“Create an Excel sheet template that automatically scores solutions based on user-defined weights.”</li>
+      <li>“Generate Python code that reads a CSV of options and outputs a ranked list with scores.”</li>
+      <li>“Provide a SQL script that creates a table for decision criteria and populates it with sample data.”</li>
+      <li>“Show how to visualize the decision matrix in Matplotlib as a heatmap.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 3a: Conciseness -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-3a">Library 3a: Conciseness</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Shorten my request to the absolute essentials while preserving key requirements.”</li>
+      <li>“Provide a concise summary of your answer in no more than three sentences.”</li>
+      <li>“Remove any unnecessary details and deliver the core solution directly.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Rewrite my prompt so that it fits within 100 characters while retaining intent.”</li>
+      <li>“Eliminate any extra adjectives or explanations that do not impact the answer.”</li>
+      <li>“Summarize this paragraph in a single bullet point.”</li>
+      <li>“List the top three takeaways from my request in a brief format.”</li>
+      <li>“Ensure your response is no longer than four lines of text.”</li>
+      <li>“Avoid filler words; focus on action items only.”</li>
+      <li>“Give a one-line answer and cite any assumptions.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Provide a single, efficient line of Python code that performs this transformation.”</li>
+      <li>“Write a one-sentence SQL query that extracts the required field.”</li>
+      <li>“Give an Excel formula condensed to under 50 characters that accomplishes this.”</li>
+      <li>“Generate a minimized Bash command (no flags) to list all files containing ‘error’.”</li>
+      <li>“Return a JSON snippet with only the necessary keys and values.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 3b: Focus Topic -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-3b">Library 3b: Focus Topic</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Focus solely on [key topic]; ignore any unrelated details.”</li>
+      <li>“Extract just the section that pertains to X and provide examples.”</li>
+      <li>“Answer my question specifically about [subject], without digressing.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Concentrate on solving the problem of [X], not in general.”</li>
+      <li>“Provide the solution specifically for version Y of this software.”</li>
+      <li>“Explain this in terms of [domain] only.”</li>
+      <li>“Ignore all context except [topic]; just give the relevant details.”</li>
+      <li>“Show only the code snippet that deals with [feature].”</li>
+      <li>“Discuss only performance trade-offs related to [aspect].”</li>
+      <li>“Highlight the part of the answer that addresses [key issue].”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write the Python function that only handles the data parsing step.”</li>
+      <li>“Give the Excel formula specifically for columns A and B operations.”</li>
+      <li>“Provide the SQL syntax for joining table X on column Y only.”</li>
+      <li>“Show the Bash command for listing only .log files modified today.”</li>
+      <li>“Return just the JSON fragment that contains ‘status’ and ‘message’.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 3c: Trim Output -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-3c">Library 3c: Trim Output</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Limit your response to a maximum of 50 words.”</li>
+      <li>“Remove any examples or explanatory text—give only the result.”</li>
+      <li>“Provide just the top three bullet points without additional context.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Give the final list in CSV format only—no explanation.”</li>
+      <li>“Output only the JSON array, without indentation or comments.”</li>
+      <li>“Show only the function definition; omit docstrings and comments.”</li>
+      <li>“Return a single sentence summary rather than a paragraph.”</li>
+      <li>“Provide only the key-value pairs, no surrounding markup.”</li>
+      <li>“Trim debugging logs; show only error lines.”</li>
+      <li>“Filter the table output to show just the header and first row.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Generate Python code that prints only variable names, not values.”</li>
+      <li>“Show the Excel formula that returns a trimmed string (no spaces).”</li>
+      <li>“Provide a compact SQL query that uses SELECT TOP 1 without explanation.”</li>
+      <li>“Return a one-line awk command that extracts column 3 from a CSV.”</li>
+      <li>“Give a minimized JSON schema without comments.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 4a: Check Assumptions -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-4a">Library 4a: Check Assumptions</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“List all assumptions you are making about the input data.”</li>
+      <li>“Identify any hidden prerequisites for your solution.”</li>
+      <li>“Confirm if you assume a specific version or environment.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“What default values are you presuming that I did not state?”</li>
+      <li>“Do you assume I have any prior data loaded or a particular schema?”</li>
+      <li>“List all library or module dependencies you think are available.”</li>
+      <li>“Identify any environmental variables or configurations you rely on.”</li>
+      <li>“Are you assuming a specific user permission level? Please confirm.”</li>
+      <li>“What external APIs or endpoints are you presuming exist?”</li>
+      <li>“List any file paths or resource names you assume are present.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“State the Python version and installed packages you expect.”</li>
+      <li>“Specify the Excel version and any macros you assume exist.”</li>
+      <li>“Detail the database engine and table structure you’re presuming.”</li>
+      <li>“List any environment variables (e.g., PATH) you assume to be set.”</li>
+      <li>“Describe the network or file permissions you expect for this code.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 4b: Reframe Context -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-4b">Library 4b: Reframe Context</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Reframe my request in the context of [specific domain or use case].”</li>
+      <li>“Assume we are working with condition X—how would you adjust your answer?”</li>
+      <li>“Explain how this solution changes if the input scale is 10× larger.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Answer this as if the end user is a non-technical stakeholder.”</li>
+      <li>“Provide the solution focusing on mobile-first considerations.”</li>
+      <li>“Frame your answer from the perspective of a data scientist.”</li>
+      <li>“Explain how the output changes if we prioritize speed over accuracy.”</li>
+      <li>“Answer with the assumption that we have infinite compute resources.”</li>
+      <li>“Reframe the prompt considering a multi-tenant, scaled environment.”</li>
+      <li>“Adopt a cybersecurity lens—how would this alter your approach?”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write the Python code tailored for AWS Lambda context.”</li>
+      <li>“Provide an Excel formula optimized for Google Sheets environment.”</li>
+      <li>“Generate a SQL query that uses BigQuery’s syntax specifically.”</li>
+      <li>“Give Bash commands assuming a Docker container environment.”</li>
+      <li>“Produce JSON output formatted for a REST API expecting API key in header.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 4c: Domain Specification -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-4c">Library 4c: Domain Specification</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Specify the domain or industry context for accurate results.”</li>
+      <li>“Provide details on data schema or entities for my domain.”</li>
+      <li>“List domain-specific terminology I should use.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Assume we are working in healthcare—how does your answer adapt?”</li>
+      <li>“Frame your response using financial services best practices.”</li>
+      <li>“Translate my prompt into IT-IL compliance requirements.”</li>
+      <li>“Use terminology from the legal domain when responding.”</li>
+      <li>“Adopt a manufacturing perspective—list relevant constraints.”</li>
+      <li>“Provide examples using energy sector data formats.”</li>
+      <li>“Contextualize the answer for e-commerce analytics.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Generate a Python class that maps to a healthcare FHIR resource.”</li>
+      <li>“Write an Excel formula referencing a PII-encrypted column.”</li>
+      <li>“Provide a SQL schema for a banking transactions table.”</li>
+      <li>“Generate a JSON schema for an insurance claims API.”</li>
+      <li>“Show how to call a SOAP service with appropriate domain headers.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 5a: Step-by-Step Outline -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-5a">Library 5a: Step-by-Step Outline</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Provide a numbered outline of the steps you will take to solve this.”</li>
+      <li>“List each action in sequence with brief descriptions.”</li>
+      <li>“Break the solution into five consecutive phases.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Give a procedural checklist of tasks in chronological order.”</li>
+      <li>“Explain your plan as if describing it to a team member.”</li>
+      <li>“Enumerate each intermediate deliverable for this request.”</li>
+      <li>“Provide a bullet-list timeline from start to finish.”</li>
+      <li>“Outline your approach with milestones and checkpoints.”</li>
+      <li>“Detail the dependencies between each step.”</li>
+      <li>“List any tools or resources needed at each step.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“List pseudocode steps to implement this Python function.”</li>
+      <li>“Outline the SQL queries needed to transform raw tables into final reports.”</li>
+      <li>“Provide the Excel actions (formulas, pivot tables) in sequence.”</li>
+      <li>“Enumerate the Linux shell commands to set up the environment.”</li>
+      <li>“Detail the API calls and payloads in order to fetch and process data.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 5b: Sequential Queries -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-5b">Library 5b: Sequential Queries</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Ask me a series of questions to narrow down the scope.”</li>
+      <li>“Present follow-up queries one at a time, based on my answers.”</li>
+      <li>“Guide me through a conversational flow to clarify details.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“First ask about the high-level objective, then dive deeper.”</li>
+      <li>“Determine data availability before proceeding with the next query.”</li>
+      <li>“Check for any constraints, then ask for preferred output format.”</li>
+      <li>“Confirm budget or resource limits before suggesting a solution.”</li>
+      <li>“Verify key parameters step by step before generating code.”</li>
+      <li>“Ask if there are multiple stakeholders, then clarify their needs.”</li>
+      <li>“Sequence questions: Who, What, When, Where, Why, How.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“In Python, check for missing imports, then ask for needed modules.”</li>
+      <li>“Prompt: ‘Do you have sample data? If yes, ask for format; if no, ask for schema.’”</li>
+      <li>“Query: ‘Is the data structured in CSV or JSON? Then proceed accordingly.’”</li>
+      <li>“In SQL, ask for table name, then columns, then conditions, then aggregation.”</li>
+      <li>“For Excel, ask for sheet names, then column headers, then desired formulas.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 5c: Divide & Conquer -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-5c">Library 5c: Divide &amp; Conquer</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Break my overall request into smaller sub-problems and solve each.”</li>
+      <li>“Divide the task by functional areas and tackle them independently.”</li>
+      <li>“Segment the data into chunks; address each chunk in sequence.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Separate UI, backend, and database layers—tackle each layer.”</li>
+      <li>“For a large dataset, divide by time range or category.”</li>
+      <li>“Split code into modules: parsing, processing, output.”</li>
+      <li>“Divide this analysis into data cleaning, transformation, modeling.”</li>
+      <li>“Break a multi-step workflow into discrete scripts or notebooks.”</li>
+      <li>“Partition the Excel workbook into separate sheets by topic.”</li>
+      <li>“Segment algorithm into input validation, core logic, and output.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write one Python function to read data, another to process, another to save.”</li>
+      <li>“Create separate SQL scripts for staging, transformation, and reporting.”</li>
+      <li>“Generate Excel macros: one to import data, one to clean data, one to visualize.”</li>
+      <li>“Divide a Bash deployment into build, test, and deploy steps.”</li>
+      <li>“Write a Jupyter Notebook cell for data loading, another for EDA, another for modeling.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 6a: Sanity Check -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-6a">Library 6a: Sanity Check</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Perform a quick reasonableness check on the output.”</li>
+      <li>“Verify that results fall within expected bounds or ranges.”</li>
+      <li>“Ask for sample test cases to confirm correctness.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Check if any value is null or out of range before finalizing.”</li>
+      <li>“Validate that all required fields are populated.”</li>
+      <li>“Confirm that totals sum correctly against known benchmarks.”</li>
+      <li>“Compare a small, hand-calculated example to the result.”</li>
+      <li>“Ask for edge inputs (0, 1, negative) to test logic.”</li>
+      <li>“Verify units: ensure currency, dates, or percentages align.”</li>
+      <li>“Confirm that the output format matches expectations exactly.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Run unit tests for boundary values in the Python function.”</li>
+      <li>“Generate a quick SQL SELECT to count NULLs in critical columns.”</li>
+      <li>“Use Excel’s Data Validation to ensure inputs fall within valid ranges.”</li>
+      <li>“Create a shell script that verifies exit codes of each step.”</li>
+      <li>“Write a small code snippet that prints sample inputs vs. outputs for cross-checking.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 6b: Generate Test Cases -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-6b">Library 6b: Generate Test Cases</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Create five test cases covering typical inputs.”</li>
+      <li>“List edge case inputs and their expected outputs.”</li>
+      <li>“Generate unit tests in your target language.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Write a test case where all fields are empty or null.”</li>
+      <li>“Include a test where inputs are extremely large.”</li>
+      <li>“Generate a case with invalid formats (e.g., wrong date).”</li>
+      <li>“Design a test where the service is unreachable or times out.”</li>
+      <li>“List a case with special characters or non-ASCII text.”</li>
+      <li>“Include a case where data types mismatch.”</li>
+      <li>“Create a test to simulate concurrent access or race condition.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write a pytest function that asserts correct output for input X.”</li>
+      <li>“Create an SQL script to insert sample rows and verify aggregate output.”</li>
+      <li>“Write an Excel macro that fills test data and checks results.”</li>
+      <li>“Generate a shell script to curl a REST endpoint with test payloads.”</li>
+      <li>“Produce a JSON file with sample messages for integration testing.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 6c: Verify Calculations -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-6c">Library 6c: Verify Calculations</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Double-check arithmetic operations for off-by-one or rounding errors.”</li>
+      <li>“Ensure that percentages and ratios are calculated correctly.”</li>
+      <li>“Compare results against a known correct example.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Recalculate totals manually for a small sample and compare.”</li>
+      <li>“Verify that averages use correct denominators (e.g., count vs. sum).”</li>
+      <li>“Check that currency conversions use the right rates.”</li>
+      <li>“Ensure no integer division mistakes in Python (use float).”</li>
+      <li>“Confirm discounts and taxes are applied in the correct order.”</li>
+      <li>“Validate that date/time differences are computed in correct units.”</li>
+      <li>“Run a sanity check for zero or negative denominators.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Show Python code verifying that 1/3 uses float division, not integer.”</li>
+      <li>“Write an SQL query that checks if SUM(col) = expected total.”</li>
+      <li>“Create an Excel formula to check consistency of calculated fields.”</li>
+      <li>“Provide a shell snippet that runs bc to verify arithmetic at the command line.”</li>
+      <li>“Generate a JUnit test case that asserts specific numeric outputs.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 7a: Edge Cases -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-7a">Library 7a: Edge Cases</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“List all boundary values and test scenarios around them.”</li>
+      <li>“Create a case for extreme inputs (minimum, maximum, zero).”</li>
+      <li>“Identify and handle null or undefined inputs explicitly.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Test with negative numbers if domain allows negatives.”</li>
+      <li>“Check behavior when inputs are floats vs. integers.”</li>
+      <li>“Handle empty arrays or lists—how does logic respond?”</li>
+      <li>“Simulate missing or corrupted data fields.”</li>
+      <li>“Test maximum string length or buffer limits.”</li>
+      <li>“Check function under heavy load (e.g., large loops).”</li>
+      <li>“Verify behavior when external service is down or slow.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write pytest cases for input lengths 0, 1, and 10⁶.”</li>
+      <li>“Generate SQL data sets with NULLs in all columns to test joins.”</li>
+      <li>“Use Excel to create extremely large pivot tables and observe time.”</li>
+      <li>“Write Bash loops that send 1000 concurrent API calls as stress test.”</li>
+      <li>“Develop a JMeter plan to test heavy traffic for the REST endpoint.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 7b: Robustness Testing -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-7b">Library 7b: Robustness Testing</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Design a suite of tests to simulate component failure.”</li>
+      <li>“Include random noise or errors in the data to test resilience.”</li>
+      <li>“Verify system gracefully handles timeouts or dropped requests.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Simulate network latency or packet loss in the test environment.”</li>
+      <li>“Perform memory leaks checks for long-running processes.”</li>
+      <li>“Test for cleanup of temporary files or resources after a crash.”</li>
+      <li>“Introduce malformed inputs in the middle of a sequence.”</li>
+      <li>“Check behavior under low-disk-space conditions.”</li>
+      <li>“Verify that retries occur as expected on 5xx errors.”</li>
+      <li>“Confirm logging and alerting works when exceptions occur.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write a Python script that kills the process mid-execution to test recovery.”</li>
+      <li>“Use chaos testing (e.g., kill -9 PID) to check service resilience.”</li>
+      <li>“Create a Docker container that runs out of memory to test container limits.”</li>
+      <li>“Use JMeter to inject randomized invalid JSON into the API request.”</li>
+      <li>“Write a shell script to fill log directory until disk is 100% full.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 7c: Alternative Scenarios -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-7c">Library 7c: Alternative Scenarios</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Propose a different scenario where the output requirements change.”</li>
+      <li>“Consider what happens if user permissions are limited.”</li>
+      <li>“Describe behavior if underlying data schema changes.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“What if the data is in XML instead of JSON?”</li>
+      <li>“How does solution differ if deployed on Windows vs. Linux?”</li>
+      <li>“Consider a scenario where user roles differ (admin vs. guest).”</li>
+      <li>“What if all timestamps are in UTC vs. local time?”</li>
+      <li>“Describe the approach if the data source is a REST API instead of flat files.”</li>
+      <li>“Envision a scenario with multi-tenant data separation—how to adapt?”</li>
+      <li>“What if the service must run on low-power IoT devices?”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write Python code to parse XML instead of JSON.”</li>
+      <li>“Provide a PowerShell script version for Windows environment.”</li>
+      <li>“Generate a MySQL version of the SQL query for legacy DB.”</li>
+      <li>“Show how to adjust the Dockerfile for ARM vs. x86.”</li>
+      <li>“Create a configuration for a low-memory IoT device in C.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 8a: Show Diffs -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-8a">Library 8a: Show Diffs</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Display the diff between the old version and new version of the code.”</li>
+      <li>“Highlight only the lines that changed in the text.”</li>
+      <li>“Provide a unified diff showing additions and deletions.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Show a side-by-side comparison of the before/after outputs.”</li>
+      <li>“List only changed values in a JSON object.”</li>
+      <li>“Generate an ASCII diff for plain text email.”</li>
+      <li>“Highlight differences in an Excel sheet between versions.”</li>
+      <li>“Show Git diff of the last commit affecting this file.”</li>
+      <li>“Display just the deleted lines or just the added lines.”</li>
+      <li>“Provide context lines (±3) around each change.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Run <code>git diff --color-words file1 file2</code> and show output.”</li>
+      <li>“Use <code>diff -u</code> to produce a unified diff between two text files.”</li>
+      <li>“Write a Python script using <code>difflib</code> to show line-by-line changes.”</li>
+      <li>“Generate an Excel formula that highlights changed cells in two columns.”</li>
+      <li>“Use <code>meld</code> or <code>vimdiff</code> to display differences side by side.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 8b: Patch Instructions -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-8b">Library 8b: Patch Instructions</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Provide a patch file that can be applied with <code>patch -p1</code>.”</li>
+      <li>“List step-by-step instructions to update the code manually.”</li>
+      <li>“Generate a diff and instructions to apply changes.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Create a GitHub pull request with the required changes.”</li>
+      <li>“Write the shell commands to apply the patch and rebuild.”</li>
+      <li>“Provide instructions for both Windows PowerShell and Linux Bash.”</li>
+      <li>“Detail which files need to be replaced or modified.”</li>
+      <li>“Specify any dependencies that need updating with this patch.”</li>
+      <li>“List how to verify the patch has been applied successfully.”</li>
+      <li>“Include rollback steps in case the patch causes issues.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Generate a <code>.patch</code> file via <code>git diff > fix.patch</code>.”</li>
+      <li>“Write Bash commands: <code>patch -p1 &lt; fix.patch &amp;&amp; make &amp;&amp; make test</code>.”</li>
+      <li>“Provide PowerShell script to apply patch: <code>git apply fix.patch</code>.”</li>
+      <li>“Show how to verify with <code>git status</code> and <code>git diff --check</code>.”</li>
+      <li>“Detail how to revert with <code>git reset --hard HEAD~1</code>.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 8c: Precise Edits -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-8c">Library 8c: Precise Edits</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Provide the exact code snippet changes line by line.”</li>
+      <li>“Highlight specific fields or parameters to update.”</li>
+      <li>“List only the modified lines, not the entire file.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Show the context surrounding each change (±2 lines).”</li>
+      <li>“Use ‘@@’ hunk headers to indicate line numbers.”</li>
+      <li>“Present the patch in unified diff format only.”</li>
+      <li>“List each function name and the precise edits within it.”</li>
+      <li>“Identify exact JSON keys that need updating.”</li>
+      <li>“Display only the CSS selectors that changed.”</li>
+      <li>“Provide the minimal HTML snippet difference.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Generate <code>git show HEAD~1:filename | diff - filename</code> output.”</li>
+      <li>“Write a Python script that uses <code>difflib.unified_diff</code>.”</li>
+      <li>“Use <code>grep -n 'pattern' file</code> to locate exact line numbers then edit.”</li>
+      <li>“Create a patch for only functions with a given signature.”</li>
+      <li>“Show the <code>kubectl patch</code> command to change a Kubernetes resource.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 9a: New Angle -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-9a">Library 9a: New Angle</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Look at this problem from a completely different perspective (e.g., analogy).”</li>
+      <li>“Assume the problem domain is reversed—what changes?”</li>
+      <li>“Frame the question as ‘How would someone with opposite goals solve this?’”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Imagine a world where data flows in reverse—how to solve then?”</li>
+      <li>“Consider solving for minimum instead of maximum.”</li>
+      <li>“Think of the problem as a financial transaction and solve accordingly.”</li>
+      <li>“View inputs as outputs and outputs as inputs.”</li>
+      <li>“Consider a competitive standpoint—what would a competitor do?”</li>
+      <li>“Reverse the user persona (end-user to admin) and rethink the approach.”</li>
+      <li>“Use a probabilistic model instead of deterministic.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write Python code that inverts the data transformation pipeline.”</li>
+      <li>“Generate SQL to retrieve missing data instead of existing data.”</li>
+      <li>“Produce an Excel formula that calculates 1/x instead of x.”</li>
+      <li>“Show a shell snippet that deletes lines instead of adding them.”</li>
+      <li>“Write a JSON spec that uses ‘error’ fields instead of ‘success’ fields.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 9b: Analogies -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-9b">Library 9b: Analogies</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Explain this concept using an analogy (e.g., cooking, travel).”</li>
+      <li>“Compare the problem to a real-world system (e.g., postal service).”</li>
+      <li>“Use a sports analogy to illustrate the steps needed.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Describe how this is like building a house from the foundation up.”</li>
+      <li>“Compare data flow to water flowing through pipes.”</li>
+      <li>“Use a library book example to show lookup and retrieval.”</li>
+      <li>“Explain user authentication like checking IDs at a nightclub.”</li>
+      <li>“Relate queuing systems to a grocery store checkout line.”</li>
+      <li>“Illustrate caching by comparing to storing items in a pantry.”</li>
+      <li>“Use a travel itinerary analogy for step-by-step algorithm.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Use a ‘bucket and sluice’ analogy to explain Spark’s partitioning.”</li>
+      <li>“Explain database indexing like a book’s table of contents.”</li>
+      <li>“Compare concurrency control to two drivers merging into one lane.”</li>
+      <li>“Use an ‘assembly line’ analogy for function pipelines in Python.”</li>
+      <li>“Describe memory allocation like organizing a filing cabinet.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 9c: Perspective Shift -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-9c">Library 9c: Perspective Shift</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Shift perspective: how would a novice approach this?”</li>
+      <li>“Answer as though you are an expert in a different domain.”</li>
+      <li>“Pretend you are the end user; what matters most?”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Explain this as if talking to a five-year-old child.”</li>
+      <li>“Answer as if you were a CTO making an executive decision.”</li>
+      <li>“Provide the solution from a security auditor’s perspective.”</li>
+      <li>“Describe the UX implications rather than the backend logic.”</li>
+      <li>“Frame the approach as a product manager presenting to stakeholders.”</li>
+      <li>“Explain as if the budget is zero—how would you proceed?”</li>
+      <li>“Answer from a data privacy advocate’s point of view.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Write Python code assuming zero external libraries available.”</li>
+      <li>“Provide SQL using only ANSI-standard features (no vendor extensions).”</li>
+      <li>“Generate an Excel solution that works on Excel 2007 (old version).”</li>
+      <li>“Write a Node.js script that assumes no internet connectivity.”</li>
+      <li>“Produce a REST API example that handles user privacy compliance.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 10a: Meta Prompt -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-10a">Library 10a: Meta Prompt</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Review your own steps and identify any missing pieces.”</li>
+      <li>“Describe how you decided which approach to use.”</li>
+      <li>“Explain your reasoning process in selecting these prompts.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Outline your internal criteria for choosing a prompt.”</li>
+      <li>“List the alternatives you considered and why you rejected them.”</li>
+      <li>“Explain assumptions you made at each stage of the process.”</li>
+      <li>“Detail how you validated your own intermediate results.”</li>
+      <li>“Reflect on any biases that might have influenced your answer.”</li>
+      <li>“Describe the trade-offs you weighed while drafting this response.”</li>
+      <li>“State how you would improve the prompt if given more time.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Output your Python script’s call stack and reasoning comments.”</li>
+      <li>“Show how you chose SQL clauses for optimization (explain plan).”</li>
+      <li>“Describe how you used profiling tools to decide on code structure.”</li>
+      <li>“Detail which unit tests you wrote first and why.”</li>
+      <li>“Explain how you debugged any initial errors step by step.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 10b: System Check -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-10b">Library 10b: System Check</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Verify system prerequisites are installed correctly.”</li>
+      <li>“Check environment variables and paths to confirm setup.”</li>
+      <li>“Run a quick diagnostic to confirm all dependencies are met.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“List the OS version and patch level you are using.”</li>
+      <li>“Check Python/Node/Java versions to ensure compatibility.”</li>
+      <li>“Verify that all required ports are open on the firewall.”</li>
+      <li>“Ensure the database service is running and listening on the correct port.”</li>
+      <li>“Check disk space and memory availability before running.”</li>
+      <li>“Confirm that any API keys or credentials are valid and unexpired.”</li>
+      <li>“Run a ‘ping’ or ‘curl’ test to ensure network connectivity.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Show the output of <code>python3 --version</code> and <code>pip freeze</code>.”</li>
+      <li>“Run <code>node -v &amp;&amp; npm list</code> and confirm installed packages.”</li>
+      <li>“Execute <code>kubectl get pods</code> to confirm Kubernetes deployment status.”</li>
+      <li>“Use <code>df -h</code> and <code>free -m</code> to check disk and memory usage.”</li>
+      <li>“Perform <code>netstat -tulpn</code> to verify critical services are listening.”</li>
+    </ul>
+  </section>
+
+  <!-- Library 10c: Agent Self-Review -->
+  <section class="library-section">
+    <div class="back-link"><a href="#chart">← Back to Chart</a></div>
+    <h2 id="lib-10c">Library 10c: Agent Self-Review</h2>
+    <p class="subheading">Top Ideas (3)</p>
+    <ul class="prompt-list">
+      <li>“Critique your previous answer and identify areas for improvement.”</li>
+      <li>“Evaluate whether you missed any edge cases or details.”</li>
+      <li>“Reflect on how you handled ambiguity and suggest enhancements.”</li>
+    </ul>
+    <p class="subheading">Additional Prompts (7)</p>
+    <ul class="prompt-list">
+      <li>“Point out any assumptions you made that could be flawed.”</li>
+      <li>“Highlight any alternate interpretations you didn’t consider.”</li>
+      <li>“Evaluate the clarity of your own response—what could be clearer?”</li>
+      <li>“Identify any biases that may have influenced your suggestions.”</li>
+      <li>“Discuss how new information might change your approach.”</li>
+      <li>“Assess whether your solution would scale or if it needs optimization.”</li>
+      <li>“Recommend further validations if the initial approach fails.”</li>
+    </ul>
+    <p class="subheading">Technical Prompts (5)</p>
+    <ul class="prompt-list">
+      <li>“Describe how you would profile your Python code to find bottlenecks.”</li>
+      <li>“List potential SQL injection risks you may have overlooked.”</li>
+      <li>“Check whether your Excel formulas correctly handle edge values.”</li>
+      <li>“Explain how you would add more unit tests to cover uncovered paths.”</li>
+      <li>“Outline improvements to your Dockerfile for better maintainability.”</li>
+    </ul>
+  </section>
+
+</body>
+</html>
