@@ -920,38 +920,6 @@
     </svg>
   </div>
 
-  <!-- ========== LIBRARY SECTIONS ========== -->
-  <!-- Each library must follow with an <h2 id="lib-..."> and a “<a href="#chart">← Back to Chart</a>.” -->
-  <!-- Example:
-  <h2 id="lib-1a">Library 1a: Ask Clarifiers</h2>
-  <a href="#chart">← Back to Chart</a>
-  … prompts …
-  -->
-
-  <!-- Insert your 30 library sections here, each anchored with the matching lib-ID. -->
-
-  <!-- ========= TOUCH‐HIGHLIGHT SCRIPT ========= -->
-  <script>
-    // On touch devices, briefly highlight outgoing arrows (500 ms) before navigation
-    document.querySelectorAll('.node-group').forEach(nodeGrp => {
-      nodeGrp.addEventListener('touchstart', () => {
-        const nodeId = nodeGrp.getAttribute('data-node-id');
-        document.querySelectorAll(`.link[data-parent-id="${nodeId}"]`).forEach(path => {
-          path.setAttribute('stroke', '#0094D6');
-          path.setAttribute('stroke-width', '3');
-        });
-        setTimeout(() => {
-          document.querySelectorAll(`.link[data-parent-id="${nodeId}"]`).forEach(path => {
-            path.setAttribute('stroke', '#003f6b');
-            path.setAttribute('stroke-width', '2');
-          });
-        }, 500);
-      });
-    });
-  </script>
-
-</body>
-</html>
   <!-- ========= Library Sections (with Back to Chart Links) ========= -->
 
   <!-- Library 1a: Ask Clarifiers -->
